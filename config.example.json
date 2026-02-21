@@ -1,0 +1,11 @@
+{
+    "APP_KEY": "your_baidu_app_key_here",
+    "SECRET_KEY": "your_baidu_secret_key_here",
+    "REDIRECT_URI": "oob",
+    "access_token": "",
+    "refresh_token": "",
+    "PROBE_PATH": "/全部资源",
+    "RUBBISH_DIR": "/rubbish_videos",
+    "SIMILARITY_THRESHOLD": 0.90,
+    "DEFAULT_THREADS": 5
+}
