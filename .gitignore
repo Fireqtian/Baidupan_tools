@@ -6,6 +6,8 @@ baidupan_token.json
 move_history.json
 processed_folders.json
 probe_report.json
+flatten_history.json
+flatten_processed.json
 
 # 临时目录
 temp_thumbnails/
