@@ -79,7 +79,7 @@ def load_config(config_file="config.json"):
         "APP_KEY": "",
         "SECRET_KEY": "",
         "REDIRECT_URI": "oob",
-        "PROBE_PATH": "/全部资源",
+        "PROBE_PATH": "/my_files",
         "RUBBISH_DIR": "/rubbish_videos",
         "SIMILARITY_THRESHOLD": 0.90,
         "DEFAULT_THREADS": 5
@@ -107,7 +107,7 @@ CONFIG = load_config()
 # ============================================================
 
 # 要探测的网盘路径
-PROBE_PATH = CONFIG.get("PROBE_PATH", "/全部资源")
+PROBE_PATH = CONFIG.get("PROBE_PATH", "/my_files")
 
 # 和谐视频的暂存目录
 RUBBISH_DIR = CONFIG.get("RUBBISH_DIR", "/rubbish_videos")
@@ -1089,7 +1089,7 @@ def print_usage():
   python baidupan_cleaner.py [选项]
 
 选项:
-  --path <路径>          指定扫描路径 (默认: /全部资源)
+  --path <路径>          指定扫描路径 (默认: /my_files)
   --threads <数量>       并发线程数 (默认: 5)
   --rollback             执行回滚操作
   --dry-run              预览模式，不实际移动文件
@@ -1097,7 +1097,7 @@ def print_usage():
   --help                 显示此帮助
 
 示例:
-  python baidupan_cleaner.py                       # 扫描 /全部资源，5线程
+  python baidupan_cleaner.py                       # 扫描 /my_files，5线程
   python baidupan_cleaner.py --path /videos        # 扫描 /videos
   python baidupan_cleaner.py --threads 10          # 使用10个线程
   python baidupan_cleaner.py --dry-run             # 预览模式
